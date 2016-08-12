@@ -1,0 +1,26 @@
+﻿<ion-view view-title="Go Liberty">
+    <ion-content>
+
+        <button ng-click="controller.getCurrentLocation()">Get Location</button>
+        <div>
+            <div>
+                latitude: {{controller.lat}}
+            </div>
+            <div>
+                longitude: {{controller.long}}
+            </div>
+        </div>
+
+        <button ng-click="controller.watchLocation()">Watch Location</button>
+        <div>
+            <div>
+                latitude: {{controller.watchLat}}
+            </div>
+            <div>
+                longitude: {{controller.watchLong}}
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,34 @@
+﻿<ion-view view-title="Play Go Liberty">
+    <ion-content>
+
+        <h4>Knowing the signals:</h4>
+        <p ng-click="controller.coldSignal()">
+            Cold : <a href="#">3 vibrations and 3 beeps.</a>
+        </p>
+        <p ng-click="controller.warmSignal()">
+            Warm : <a href="#"> 1 beep. </a>
+        </p>
+        <p ng-click="controller.hotSignal()">
+            Hot : <a href="#">1 beep and 1 vibration.</a>
+        </p>
+        <p ng-click="controller.winSignal()">
+            Win : <a href="#">5 beeps and a Wellcome message.</a>
+        </p>
+
+        <button ng-click="controller.watchLocation()" ng-show="controller.playShow">PLAY </button>
+        
+                <div>
+            <div>
+                latitude: {{controller.watchLat}}
+            </div>
+            <div>
+                longitude: {{controller.watchLong}}
+            </div>
+            <div>
+                Distance from Destination: {{controller.currentDistance}} kms
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>
